@@ -15,7 +15,7 @@ Plug and play.
 To create a route, go to `Routes` folder, make a `<Stack.Screen />` to test out components and change the `initialRouteName` attribute value of the `Stack.Navigator` of the route that you want. 
 
 ### Resources
-[React_Native](https://reactnative.dev/docs/getting-started)
-[Expo](https://docs.expo.dev/)
-[React_Navigation](https://reactnavigation.org/docs/getting-started/)
+- [React_Native](https://reactnative.dev/docs/getting-started)
+- [Expo](https://docs.expo.dev/)
+- [React_Navigation](https://reactnavigation.org/docs/getting-started/)
 
