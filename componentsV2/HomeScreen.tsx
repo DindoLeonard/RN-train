@@ -12,8 +12,12 @@ const HomeScreen = (props: any) => {
     <View style={styles.container}>
       <Text>HomeScreen {` ${user.name}`}</Text>
       <Button title='Go to details' onPress={()=>{
-        navigation.navigate('Details')
+        navigation.navigate('Details', {itemId: 96, otherParams: 'This is a params'})
       }}/>
+
+      <Button title='Go to Navigators' onPress={()=>{
+        navigation.navigate('NestedNavigators')
+      }} />
     </View>
   )
 }
