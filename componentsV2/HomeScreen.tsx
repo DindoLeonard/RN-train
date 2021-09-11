@@ -1,10 +1,19 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React, {useContext} from 'react'
+import { StyleSheet, Text, View, Button } from 'react-native'
+import SampleContext from '../context/Context'
 
-const HomeScreen = () => {
+const HomeScreen = (props: any) => {
+  const { navigation } = props
+
+  const sampleCtx = useContext(SampleContext);
+  const {user} = sampleCtx
+
   return (
     <View style={styles.container}>
-      <Text>HomeScreen</Text>
+      <Text>HomeScreen {` ${user.name}`}</Text>
+      <Button title='Go to details' onPress={()=>{
+        navigation.navigate('Details')
+      }}/>
     </View>
   )
 }
